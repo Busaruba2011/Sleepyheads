@@ -6,13 +6,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
         body {
+            padding: 25px;
+            background-color: white;
+            color: rgb(49, 47, 47);
+            font-size: 25px;
+        }
+        
+        .dark-mode {
+            background-color: rgb(36, 34, 34);
+            color: white;
+        }
+        
+        body {
             font-family: 'Open Sans', sans-serif;
         }
     </style>
 
-    <title>Sleepyheads Sounds</title>
-    <h1>Sounds</h1>
-    <h2>ALL SOUNDS ARE 1 HOUR</h2>
+    <header>
+        <title>Sleepyheads Sounds</title>
+        <h1>Sounds</h1>
+        <h2>ALL SOUNDS ARE 1 HOUR</h2>
+
+    </header>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
     <p>Fan</p>
     <audio controls>
@@ -37,6 +60,9 @@
 </audio>
 
     <h4>More coming soon!</h4>
+
+    <h1>Meditations</h1>
+    <p>This is a feature coming soon</p>
 
     <h6>Copyright Busaruba2011. Under MIT License.</h6>
 
